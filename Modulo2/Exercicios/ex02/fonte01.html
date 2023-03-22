@@ -10,6 +10,29 @@
         body {
              /* Primeiro tenta  aplicar a primeria fonte, depois, a segunda, e a terceira é para caso nenhuma das anteriores funcionarem, essa combinação se chama Web Safe Font Combination */
             font-family: 'Courier New', Courier, monospace;
+
+            /* Medidas Absolutas:
+               cm, mm, in, px, pt, pc
+               (centímetro, milímetro, polegada, pixel, ponto, paica)
+               
+               Medidas Relativas:
+               em, ex, rem, vw, %
+
+               Em: Medida relativa ao tamanho atual da fonte/M maiúsculo da fonte
+               
+               Ex: Medida relativa a altura do x da fonte
+               
+               Rem: O rem é igual ao 'em', porém relativo ao root, ou seja, a fonte configurada no body)
+
+               Vw(View Width): Largura da View Port, ou seja, a largura do tamanho da sua tela. é uma % da largura da view port.
+
+               Vh(View height): Altura da View Port, é uma % da altura da view port.
+
+               %: Porcentagem normal.
+               -------------------------------------------------------
+               Para medidas de fonte, segundo o W3C, é recomendado utilizar as medidas 'px' e 'em' somente.
+               */
+            font-size: 1px;
         }
 
         h1, h2{ font-family: 'Times New Roman', Times, serif;
