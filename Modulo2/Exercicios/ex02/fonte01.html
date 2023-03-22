@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style> 
+         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+                /* weight(peso), width(largura), height(altura)*/
                        
         body {
              /* Primeiro tenta  aplicar a primeria fonte, depois, a segunda, e a terceira é para caso nenhuma das anteriores funcionarem, essa combinação se chama Web Safe Font Combination */
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
 
             /* Medidas Absolutas:
                cm, mm, in, px, pt, pc
                (centímetro, milímetro, polegada, pixel, ponto, paica)
+
+               O ponto é a medida usada para medir as fontes no MicrosoftWord por exemplo.
                
                Medidas Relativas:
                em, ex, rem, vw, %
@@ -31,12 +36,40 @@
                %: Porcentagem normal.
                -------------------------------------------------------
                Para medidas de fonte, segundo o W3C, é recomendado utilizar as medidas 'px' e 'em' somente.
+
+               16px geralmente é o tamanho natural da fonte, caso nenhum tamanho seja definido.
+
+               16px geralmente = 1em
+
+
                */
-            font-size: 1px;
+
+            font-size: 1.2em;
+
+            /* lighter, normal, bold, bolder 
+            aceita valores de 100 a 900 */
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            /* O h1 normalmente está em negrito */
         }
 
-        h1, h2{ font-family: 'Times New Roman', Times, serif;
+        h1 {    font-family: 'Work Sans', sans-serif;
+                font-weight: bolder;
+                font-size: 3em;
+                font-style: italic;
 
+                /* propriedade shorthand, uma propriedade para declarar valores de uma vez só mais rapidamente, exemplo abaixo de uma shorthand:
+                
+                                shorthand font
+                - font-style -> font-weight -> font-size -> font-family
+                */
+                font: italic bolder 3em 'Work Sans', sans-serif;
+
+        }
+
+        h2 {
+            font: bold 2em Arial;
         }
     </style>
 </head>
@@ -49,3 +82,50 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam corrupti possimus voluptates blanditiis labore corporis deserunt aspernatur minima. Nobis beatae voluptates id eius officiis! Excepturi dignissimos recusandae officiis quisquam.</p>
 </body>
 </html>
+<!--
+                        Tiago Sampa
+
+                    📝 HORA DA REVISÃO
+
+                        Peso (negrito):	
+
+		- fonte mais cheia (negrito) ou fina
+		- não serve para fontes simples (arial, verdana, times,...)
+		- serve pra fontes como Work Sans (import google)
+
+	                    font-weight: nome ou número;	    
+
+        nome:	- lighter		número:	- 100   - 500   - 900
+		- normal				- 200   - 600
+		- bold				- 300   - 700
+		- bolder				- 400   - 800
+
+
+                        Estilo (itálico):
+
+	    font-style: valor;		valor:  - normal
+							   - italic
+
+                        Decoração (sublinhado):
+
+	    text-decoration: underline;
+
+
+                        Shorthand font: simplificando fontes.
+
+        Ex:	 font-family: 'Work Sans', sans-serif;
+	         font-weight: bolder;
+	         font-size: 3em;
+	         font-style: italic;
+
+                        Simplificando:
+
+		font:  italic  bolder  3em  'Work Sans', sans-serif;
+
+        - A sequência deve ser:	
+
+		font-style   ->   font-weight   ->   font-size   -> font-family;
+
+        - Não precisa ter todas as propriedades, mas a sequência deve ser seguida;
+
+        Ex:		font:  bold  2em  'Work Sans';-->
