@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        Eu posso ter mais de uma classe em um elemento, basta separar por barra de espaço, sem vírgula
+
+        E também posso ter uma classe e um id em um mesmo elemento
+
+        Porém é incorreto usar um mesmo id em dois itens diferentes, pois para isso, se usa o elemento 'class'.
+
+        Id sobrepõe as configurações de classe, pois ele é ligado depois, o que vale é o último a ser ligado. Porém ele sempre irá herdar oque veio da camada acima.
+
+        A tag <Span> é apenas para selecionar uma parte do texto, ela não faz nada.
+    -->
+    
+    <h1 id="principal">Criando Sites com HTML e CSS</h1>
+    <main>
+    <h1 class="titulo">Aprendendo HTML</h1>
+    <h2 class="basico">HTML Básico</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur <span class="basico destaque">adipisicing elit</span>. Earum, obcaecati. Delectus possimus dicta tenetur nulla minus sequi. Esse quia aliquid minus. Quas libero nostrum maiores veritatis suscipit magni tempora sit?</p>
+    <h2 class="intermediario">HTML Intermediário</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span id="earum" class="earum">Earum</span>, obcaecati. Delectus possimus dicta tenetur nulla minus sequi. Esse quia aliquid minus. Quas libero nostrum maiores veritatis suscipit magni tempora sit?</p>
+    <h2 class="avancado">HTML Avançado</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, obcaecati. Delectus possimus dicta tenetur nulla minus sequi. Esse quia aliquid minus. Quas libero nostrum maiores veritatis suscipit magni tempora sit?</p>
+    <h1 class="titulo">Aprendendo CSS</h1>
+    <h2 class="basico">CSS básico</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, obcaecati. Delectus possimus dicta tenetur nulla minus sequi. Esse quia aliquid minus. Quas libero nostrum maiores veritatis suscipit magni tempora sit?</p>
+    <h2 class="intermediario">CSS Intermediário</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, obcaecati. Delectus possimus dicta tenetur nulla minus sequi. Esse quia aliquid minus. Quas libero nostrum maiores veritatis suscipit magni tempora sit?</p>
+    <h2 class="avancado">CSS Avançado</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, obcaecati. Delectus possimus dicta tenetur nulla minus sequi. Esse quia aliquid minus. Quas libero nostrum maiores veritatis suscipit magni tempora sit?</p>
+</main>
+</body>
+</html>
