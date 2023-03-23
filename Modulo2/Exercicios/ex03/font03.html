@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /* Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            
+            */
+        @font-face {
+            font-family: 'Handmade';
+            src: url(fonts/SimpleHandmade.otf) format(opentype), url(fonts/SimpleHandmade.ttf) format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+           font-family: 'Handmade';
+        font-size: 2em;
+
+        }
+        h1 { font-family: 'Handmade';
+        font-size: 2em;
+        font-weight: normal;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima eius tempore expedita, aspernatur, repudiandae aut cum officiis non nihil temporibus tempora quibusdam explicabo aperiam ex rerum. Adipisci, obcaecati? Aliquid.</p>
+    
+</body>
+</html>
