@@ -35,6 +35,13 @@ label {
     height: auto;
 }
 
+h3 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 30px;
+}
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -88,6 +95,10 @@ a.pure-button-primary {
     color: #1f8dd6;
     border-radius: 5px;
     font-size: 120%;
+}
+
+a.pure-button-primary:hover {
+    background-color: #a6f4ff;;
 }
 
 
