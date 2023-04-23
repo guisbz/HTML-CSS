@@ -6,6 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixas</title>
 </head>
+<style>
+    h1 {    /* "h1" é um elemento box-level(display block), que começa em uma linha sozinha, quebra uma linha para o próximo conteúdo,
+                e recebe as características de um elemento block, como por exemplo width e height. 
+                é possível alterar o tipo de exibição level de um elemento pelo comando "display: ;" */
+        background-color: lightgray;
+        height: 300px;
+        width: 300px;
+
+          /* shorthand padding : ( obedece a ordem do relógio, cima, direita, baixo, esquerda.)
+         padding: 10px /or/ padding: 10px 10px 10px 10px;
+
+         Se colocar apenas duas medidas, ex: padding: 10px 20px; logo, os valores do sentido oposto serão iguais, neste caso, o valor bottom seria 10px também, e o valor left 20px, equivalente ao right */
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+    
+
+        /* shorthand border :
+         border: 10px solid rebeccapurple */
+        border-width: 10px;
+        border-style: solid;
+        border-color: rebeccapurple;  
+
+
+    /* shorthand margin :
+         margin: x x x x;
+         
+        margin: auto; = centraliza horizontalmente a caixa
+        marign auto não funciona em bottom e top.
+        para texto centralizado, se usa text-align: center; */
+        margin: 20px auto 40px auto;
+
+
+        /* shorthand outline:
+         outline: 10px dashed aquamarine */
+        outline-width: 10px;
+        outline-style: dashed;
+        outline-color: aquamarine;
+        
+    }
+
+    a {    /* "a" é um elemento inline-level(display inline), os elementos inline level, ocupam a largura inteira do site.
+            é possível também usar o display: inline-block; que é um elemento inline, porém com algumas características de block, por exemplo, a possibilidade de usar width e height. */
+
+         border-width: 10px;
+        border-style: groove;
+        border-color: darkcyan;        
+    }
+</style>
 <body>
     <h1>Exemplo de caixa box-level</h1>
     <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a></p>Vamos ver como isso tudo funciona.
