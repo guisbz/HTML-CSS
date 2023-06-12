@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 14px solid black; /* Não retire a borda normal ou o código não funciona!*/
+            padding: 10px;
+            border-image-source: url('Borda2.png');
+            border-image-slice: 28;
+            border-image-repeat: repeat;
+
+            /* Shorthand image border 
+            border-image: url('') 28 repeat;
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+    
+</body>
+</html>
