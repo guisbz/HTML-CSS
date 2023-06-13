@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+
+body { background-color: darkturquoise;
+       text-align: center;
+       height: 100%;
+       margin: auto;
+    
+    
+    }
+    nav{
+        text-align: right;
+    }
+
+    nav > a {
+        margin-left: 50px;
+        font-family: 'Signika Negative', sans-serif;
+        color: white;
+        text-decoration: none;
+
+    }
+    header {
+        background-image: linear-gradient(to bottom, #64F2F5 79px, #1BF1F5, #00BFC1, #13A6A8 , #0D7475);
+        padding: 10px;
+        box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.301);
+        margin: auto;
+        width: 1900px;
+        max-width: calc(100% - 20px);
+        height: auto;
+        
+    }
+
+    header > h1 {
+        font-family: 'Barlow Condensed', sans-serif;
+        color: white;
+        font-size: 50px;
+        margin-top: 35px;
+        margin-bottom: 29px;
+    }
+
+    header > p {
+        font-family: 'Signika Negative', sans-serif;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 38px;
+    }
+    main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.301);
+        border-radius: 15px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        margin: auto;
+        width: 692px;
+        box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.301);
+        border-radius: 15px;
+        align-items: center;
+    }
+
+    article > aside {
+        font-style: italic;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.200);
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    article {
+        padding-bottom: 600px;
+    }
+
+    div#bola {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(19, 141, 248);
+        box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.288);
+        margin: auto;
+        align-items: center;
+        border-radius: 50%;
+
+    }
