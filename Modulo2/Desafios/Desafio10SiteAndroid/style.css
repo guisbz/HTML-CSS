@@ -87,13 +87,24 @@ body { background-color: #7692ff;
     main {
         background-color: white;
         padding: 10px;
-        margin: 10px auto;
+        margin: auto;
         align-items: center;
-        box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.301);
-        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         max-width: 1000px;
-        min-width: 320px;
+        min-width: 280px;
         height: 2100px;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    main img.pequena {
+        width: 50%;
+        display: block;
+        margin: auto;
     }
 
     main h1 {
