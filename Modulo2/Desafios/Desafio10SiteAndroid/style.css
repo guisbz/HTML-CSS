@@ -22,6 +22,8 @@
     --cor2:#3d7068;
     --cor3: #000000;
     --cor4: #ffffff;
+    --cor-android: #1a7e38;
+    --cor-android2: #208f1c;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Barlow Condensed', sans-serif;
@@ -34,10 +36,32 @@
 
     }
 
+    main p {
+        margin: 15px 0px;
+        text-align: justify;
+        text-indent: 20px;
+        line-height: 2em;
+        font-size: 1em;
+    }
     
+    main strong {
+        color: #0D7475;
+        font-weight: bold;
+    }
+
+    main a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #7692ff;
+
+    }
+
+    main a:hover {
+        text-decoration: underline;
+    }
+
+
 body { background-color: #7692ff;
-    text-align: center;
-    height: 100%;
     margin: auto;
     font-family: var(--fonte-padrao);
  
@@ -48,11 +72,10 @@ body { background-color: #7692ff;
     header {
         background-image: linear-gradient(to bottom, var(--cor1) 79px, #1BF1F5, #00BFC1, #13A6A8 , #0D7475);
         padding: 10px;
-        box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.301);
-        margin: auto;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.301);
+        text-align: center;
         width: 3900px;
         max-width: calc(100% - 20px);
-        height: auto;
         
     }
 
@@ -62,6 +85,7 @@ body { background-color: #7692ff;
         font-size: 50px;
         margin-top: 35px;
         margin-bottom: 29px;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
     }
 
     header > p {
@@ -69,32 +93,44 @@ body { background-color: #7692ff;
         color: white;
         margin-bottom: 10px;
         margin-top: 38px;
+        max-width: 480px;
+        margin: auto;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.411);
     }
 
     nav{
         text-align: right;
+        padding: 10px;
     }
 
     nav > a {
-        margin-left: 50px;
+        padding: 20px 19px 20px 19px;
+        border-radius: 5px;
         font-family: 'Signika Negative', sans-serif;
         color: white;
         text-decoration: none;
+        transition-duration: 0.5s;
 
+    }
+
+    nav > a:hover {
+        background-color: #00BFC1;
+        color: var(--cor2);
     }
 
 
     main {
         background-color: white;
-        padding: 10px;
+        padding: 30px;
         margin: auto;
         align-items: center;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
         max-width: 1000px;
-        min-width: 280px;
-        height: 2100px;
+        min-width: 1900x;
     }
 
     main img {
@@ -102,35 +138,66 @@ body { background-color: #7692ff;
     }
 
     main img.pequena {
-        width: 50%;
+        max-width: 350px;
         display: block;
         margin: auto;
     }
 
     main h1 {
         font-family: var(--fonte-android);
+        color: var(--cor-android);
 
     }
 
     main h2 {
         font-family: var(--fonte-android);
+        color: var(--cor-android2);
+        background-image: linear-gradient(to right, var(--cor1), transparent);
+        text-indent: 8px;
+    }
+
+    aside { background-color: var(--cor1);
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+
+    aside > h3 {
+        color: white;
+        background-color: #13A6A8;
+        padding: 10px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    aside > ul {
+        list-style-position: inside;
+        columns: 2;
+        list-style-type: '\2714\00A0\00A0';
     }
     footer {
         text-align: center;
         padding: 5px;
         background-color: black;
         color: white;
-        margin: auto;
-        width: 692px;
+        margin: 10px auto 0px;
         box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.301);
-        border-radius: 15px;
         align-items: center;
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    footer p > a {
+        text-decoration: none;
+    }
+    footer p > a:hover{
+        text-decoration: underline;
     }
 
     article > aside {
         font-style: italic;
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.200);
-        border-radius: 5px;
+        border-radius: -9px;
         margin: auto;
     }
 
@@ -138,3 +205,5 @@ body { background-color: #7692ff;
         align-items: center;
        
     }
+
+   
