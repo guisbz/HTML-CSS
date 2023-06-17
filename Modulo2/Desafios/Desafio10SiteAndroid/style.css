@@ -10,6 +10,8 @@
     #3d7068
     #000000
     #ffffff
+
+    #52489c charcoal
 */
 @font-face {
     font-family: 'Android';
@@ -17,7 +19,7 @@
     font-weight: normal;
 }
     :root {
-    --cor0: #7692ff;
+    --cor0: #52489c;
     --cor1: #64f2f5;
     --cor2:#3d7068;
     --cor3: #000000;
@@ -74,7 +76,7 @@
     main a {
         text-decoration: none;
         font-weight: bold;
-        color: #7692ff;
+        color: var(--cor0);
 
     }
 
@@ -83,11 +85,13 @@
     }
 
 
-body { background-color: #7692ff;
-    margin: auto;
-    font-family: var(--fonte-padrao);
- 
- 
+body {  background-image: url(imagens/minimal-green.jpg);
+        background-size: contain;
+        image-resolution: 100%;
+        background-attachment: fixed;
+        
+        margin: auto;
+        font-family: var(--fonte-padrao);
  }
 
 
@@ -127,7 +131,7 @@ body { background-color: #7692ff;
     }
 
     nav > a {
-        padding: 20px 19px 20px 19px;
+        padding: 20px 14px 20px 14px;
         border-radius: 5px;
         font-family: 'Signika Negative', sans-serif;
         color: white;
@@ -171,7 +175,7 @@ body { background-color: #7692ff;
         color: var(--cor-android);
         font-weight: normal;
         font-size: 1.8em;
-       text-align: center;
+        text-align: center;
 
     }
 
@@ -181,6 +185,7 @@ body { background-color: #7692ff;
         background-image: linear-gradient(to right, var(--cor1), transparent);
         text-indent: 8px;
         font-weight: normal;
+        text-align: center;
     }
 
     aside { background-color: var(--cor1);
@@ -201,7 +206,11 @@ body { background-color: #7692ff;
         list-style-position: inside;
         columns: 2;
         list-style-type: '\2714\00A0\00A0';
+        margin-left: 10px;
+
     }
+
+
     footer {
         text-align: center;
         padding: 5px;
@@ -211,7 +220,7 @@ body { background-color: #7692ff;
         box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.301);
         align-items: center;
         font-size: 0.8em;
-        padding: 5px;
+        padding: 10px;
     }
 
     footer p > a {
